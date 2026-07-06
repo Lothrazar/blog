@@ -1,0 +1,19 @@
+locale = "en-AU"
+label = "English (Australia)"
+direction = "ltr"
+weight = 1
+
+title = "Lothrazar"
+copyright = "&copy; 2026 Lothrazar"
+
+[params]
+  dateFormat = "2 January 2006"
+
+  description = ""
+
+[params.author]
+  name = "Lothrazar"
+  image = "img/author.jpg"
+  links = [
+    { link = "https://allmylinks.com/lothrazar" },
+  ]
