@@ -1,0 +1,58 @@
+/* Homepage look: pixel display font, square corners, beveled cards */
+:root {
+  --font-display: 'Pixelify Sans', sans-serif;
+  --outline: #120d0a;
+  --bevel-light: #5b4637;
+  --bevel-dark: #1c1410;
+  --bg-card: #33261d;
+  --bg-hover: #3f2f24;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+header nav,
+footer {
+  font-family: var(--font-display);
+}
+
+/* Square corners, except avatars */
+.rounded,
+.rounded-md,
+.rounded-lg,
+.rounded-xl,
+.rounded-2xl,
+.prose img,
+.prose pre,
+.prose code,
+.prose blockquote,
+button,
+input {
+  border-radius: 0;
+}
+
+/* Beveled, outlined blocks like the homepage cards */
+.prose pre,
+.prose blockquote,
+#search-query,
+#search-results li {
+  background: var(--bg-card);
+  border: 2px solid var(--outline);
+  box-shadow: inset 2px 2px 0 var(--bevel-light), inset -2px -2px 0 var(--bevel-dark);
+}
+
+#search-results li:hover {
+  background: var(--bg-hover);
+}
+
+hr {
+  border-color: var(--outline);
+  border-width: 2px;
+}
+
+:focus-visible {
+  outline: 2px solid rgb(var(--color-primary-400));
+  outline-offset: 2px;
+}
